@@ -1,19 +1,34 @@
 {
-  "posts": [
+  "CustomerData": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "fname": "shashank",
+      "lname": "gulati",
+      "address": "20 indirapuram, ghaziabad, up",
+      "accnumber": "98997979",
+      "email": "gulasga@nwb.com",
+      "mobile": "9879797979",
+      "passw": "Noida@111",
+      "id": 1
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "fname": "Abhay",
+      "lname": "Khurana",
+      "address": "20, gali no. 5, shahdara, delhi 110021",
+      "accnumber": "08098080",
+      "email": "abhay@gmail.com",
+      "mobile": "9789979808",
+      "passw": "Abhay@33",
+      "id": 2
+    },
+    {
+      "fname": "raman",
+      "lname": "singh",
+      "address": "11 building no. 5 rohini sec 1, delhi 110055",
+      "accnumber": "08980980",
+      "email": "raman@icloud.com",
+      "mobile": "9897977898",
+      "passw": "Ramand@22",
+      "id": 3
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
