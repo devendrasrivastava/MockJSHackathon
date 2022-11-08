@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NatWest Bank</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="shortcut icon" href="Img/icon.JPG" type="image/x-icon">
+</head>
+
+<body>
+
+     <!-- header start -->
+     <header>
+        <nav class="navbar navbar-expand-lg bg-light user-navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand img-fluid" href="#"><img src="img/nw logo.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse user-navbar-navbtn" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/">Home</a>
+                        </li> 
+
+                        <li class="nav-item">
+                            <a class="nav-link active"  href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contactUs.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="aboutUs.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="signupPage.html">Sign Up</a>
+                        </li>
+                    
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline user-btn-color" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                    
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+        <!-- header ends -->
+
+
+    <!-- login form starts here -->
+
+    <div class="container" id="loginForm">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Exo+2&family=Fasthand&family=Lobster&family=Poor+Story&family=Silkscreen&family=Source+Sans+Pro&display=swap"
+            rel="stylesheet">
+        <div class="row">
+            <div class="col-12 col-sm-8 mx-auto">
+                <img src="img/nw logo.png" id="loginNwLogo" alt="" class="img-fluid">
+                <H1>Login Here</H1>
+                <form target="_blank" action="https://www.amazon.in/" type="submit" method="get" id="loginForm">
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text"><i class="fa-solid fa-envelope"></i></span>
+                        <input type="email" id="exampleInputEmail33" class="form-control" placeholder="Enter Your Email"
+                            aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text"><i class="fa-solid fa-key"></i></span>
+                        <input type="password" id="exampleInputPassword3" class="form-control" placeholder="Password"
+                            aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+
+                    <button type="submit" id="loginSubmitButton" value="submit" class="btn btn-primary" 
+                        onclick="return login()">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer starts -->
+    <footer>
+        <div class="container user-footer my-4">
+            <footer class="py-5">
+                <div class="row">
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Loans</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Interest Rates</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Mortgages</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Plans</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Banking</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Current Accounts</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Savings Accounts</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Overdraft</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Investment Banking</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-5 offset-md-1 mb-3">
+                        <form>
+                            <h5>Subscribe to our newsletter</h5>
+                            <p>Monthly digest of what's new and exciting from us.</p>
+                            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                                <label for="newsletter1" class="visually-hidden">Email address</label>
+                                <input id="newsletter1" type="email" class="form-control" placeholder="Email address">
+                                <button class="btn btn-primary" type="button">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                    <p>© 2022 NatWest Bank, Inc. All rights reserved.</p>
+                    <ul class="list-unstyled d-flex" id="user-social-media-icons">
+                        <li class="ms-3"><a class="link-dark" href="#"><a href="#" class="fa fa-facebook"></a></use>
+                                </svg></a></li>
+                        <li class="ms-3"><a class="link-dark" href="#"><a href="#" class="fa fa-twitter"></a></use>
+                                </svg></a></li>
+                        <li class="ms-3"><a class="link-dark" href="#"><a href="#" class="fa fa-linkedin"></a></use>
+                                </svg></a></li>
+                        <li class="ms-3"><a class="link-dark" href="#"><a href="#" class="fa fa-instagram"></a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </footer>
+    <!-- footer ends -->
+
+            <script src="js/login.js"></script>
+            <script src="js/script.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+                crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -33,14 +33,15 @@
                 <div class="collapse navbar-collapse user-navbar-navbtn" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="services.html">Services</a>
+                            <a class="nav-link active" aria-current="page" href="/">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="contactUs.html">Contact Us</a>
+                            <a class="nav-link active" href="services.html">Services</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" href="aboutUs.html">About Us</a>
                         </li>
+
                         <li class="nav-item">
                             <a class="nav-link active" href="loginPage.html">Login</a>
                         </li>
@@ -60,53 +61,54 @@
     </header>
     <!-- header ends -->
 
-    <!--carousel starts -->
-    <div class="container user-carousel">
-        <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="false">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="img/caro5.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>NatWest Bank</h5>
-                        <p>Looking for a Current Account?.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="img/caro6.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>NatWest Digital</h5>
-                        <p>World's fastest and safest digital technology.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="img/caro7.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>NatWest Services</h5>
-                        <p>Loan, Credit Cards and Mortgages without a visit to the branch.</p>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
+    <!-- accordian starts -->
+    <div class="container">
+    <div class="accordion user-accordian" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Call Us on our 24x7 Customer Services
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <h2>1800 2900 5151</h2>
+              <p>For Personal Banking</p><br>
+              <h2>1800 2900 5252</h2>
+              <p>For Business Banking</p><br>
+              <h2>1800 2900 5353</h2>
+              <p>For investment Banking</p>
+          </div>
         </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Email Us
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <h2>services@natwestbank.co.uk</h2>
+              <p>Just email us and you well get response within 24 hours. Don't worry we never share your contact details with anyone.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Write to us
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Not comfortable calling or emailing us?</strong> You can write to us on any of the branch address. Details and address of the branches you can find on the back side of your cheque books or you can scroll down to find out more.
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <!--carousel ends -->
+    <!-- accordian ends -->
+    
 
     <!-- card row start-->
 
@@ -150,38 +152,12 @@
     <!-- card row ends -->
 
 
-    <!-- rounded photo starts -->
-    <div class="container my-4">
-        <div class="row">
-            <div class="col-lg-4">
-
-                <img src="img/crdit cards.JPG" alt="" class="bd-placeholder-img rounded-circle" width="140"
-                    height="140">
-                <h2 class="fw-normal">Credit Cards</h2>
-                <p>No need to visit the branch if you need a credit card. you can browse through below link for a credit
-                    card which suits your needs.</p>
-                <p><a class="btn btn-secondary" href="services.html">View details »</a></p>
-            </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-                <img src="img/loan.JPG" alt="" class="bd-placeholder-img rounded-circle" width="140" height="140">
-
-                <h2 class="fw-normal">Loans</h2>
-                <p>Please check out our exciting Interest Rates to fulfill your short term dreams. Loans are available
-                    in various categories.</p>
-                <p><a class="btn btn-secondary" href="services.html">View details »</a></p>
-            </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-                <img src="img/mortgage.JPG" alt="" class="bd-placeholder-img rounded-circle" width="140" height="140">
-
-                <h2 class="fw-normal">Heading</h2>
-                <p>And lastly this, the third column of representative placeholder content.</p>
-                <p><a class="btn btn-secondary" href="services.html">View details »</a></p>
-            </div><!-- /.col-lg-4 -->
-        </div>
-    </div>
-    <!-- rounded photos end -->
-
    
+        </div>
+    </footer>
+    <!-- footer ends -->
+
+
     <!-- footer starts -->
     <footer>
         <div class="container user-footer my-4">
