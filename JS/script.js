@@ -51,14 +51,7 @@ function validation() {
     return false;
   }
 
-
-  //for  mobile no.
-  // if (mobileNumber.value == "" || mobileNumber.value.length < 10) {
-  //   alert("Only numbers are allowed for mobile number field starting with 6 to 9");
-  //   mobileNumber.focus();
-  //   return false;
-  // }
-
+//for mobile
   if (!/^[6-9][0-9]{9}$/.test(mobileNumber.value)) {
     alert("Only numbers are allowed for mobile number field starting with 6 to 9");
     mobileNumber.focus();
@@ -66,7 +59,6 @@ function validation() {
   }
 
   //To check a password must be between 6 to 20 characters which contain at least one numeric digit, one uppercase and one lowercase letter
-
   var passw = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/;
   if (pass1.value.match(passw)) {
     return true;
@@ -78,7 +70,7 @@ function validation() {
 }
 
 //form validations end here
-//////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 //sign up page data post to db.json server starts here
@@ -129,7 +121,7 @@ form.addEventListener('submit', function (e) {
 })
 
 //sign up form data post method ends here
-////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 
@@ -154,7 +146,7 @@ function login() {
   }
   else {
 
-    fetch(`http://localhost:3000/StudentData?email=${email}`)
+    fetch(`http://localhost:3000/CustomerData?email=${email}`)
       .then(res => res.json())
       .then(data => {
         console.log(data);
@@ -169,13 +161,7 @@ function login() {
           alert("Incorrect Password")
         }
       })
-
-
   }
 }
-
-
-
-
 /////////////////////////////
 //login script validation ends
