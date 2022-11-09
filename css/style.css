@@ -85,3 +85,8 @@
 .user-accordian h2{
     color: #A12AC2;
 }
+
+.userSubscribeButton{
+    background-color: #A12AC2 !important;
+    border-color: #A12AC2 !important;
+}
