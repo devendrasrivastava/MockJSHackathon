@@ -155,10 +155,12 @@ function login() {
         }
         if (data[0].passw === password) {
           console.log("Success");
+          alert("login successful");
           return true;
         }
         else {
           alert("Incorrect Password")
+          return false;
         }
       })
   }
