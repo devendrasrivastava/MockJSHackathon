@@ -39,6 +39,26 @@
       "mobile": "8787979797",
       "passw": "Bsdsd@888",
       "id": 4
+    },
+    {
+      "fname": "Vinod",
+      "lname": "Jaisingh",
+      "address": "20 mathura road, delhi",
+      "accnumber": "79879797",
+      "email": "jaisingh@gmail.com",
+      "mobile": "8987897979",
+      "passw": "Fddd@123",
+      "id": 5
+    },
+    {
+      "fname": "Devendra",
+      "lname": "kumar",
+      "address": "20 cahdfhdh, fddfddf",
+      "accnumber": "43534534",
+      "email": "kumard@rbos.co.uk",
+      "mobile": "9897987987",
+      "passw": "Delhit@123",
+      "id": 6
     }
   ]
 }

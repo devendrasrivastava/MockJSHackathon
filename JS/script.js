@@ -113,7 +113,7 @@ form.addEventListener('submit', function (e) {
     })
     .then(function (data) {
       console.log(data)
-      var results = document.getElementById('results')
+      // var results = document.getElementById('results')
       // results.innerHTML = `<p> The title of the to do is ${data.title}</P>
       // <p>The body of the to do is ${data.body}</p>`
       alert("Details have been submitted successfully");
@@ -134,6 +134,15 @@ btnLogin.onclick = login;
 // var currentUser = 0;
 
 function login() {
+
+
+let Lform = document.getElementById('loginFormId')
+Lform.addEventListener('submit', function (e) {
+  //auto submission of form
+
+  e.preventDefault()
+  
+
   console.log("login");
   let email = document.getElementById("exampleInputEmail33").value;
   let password = document.getElementById("exampleInputPassword3").value;
@@ -142,7 +151,7 @@ function login() {
   }
   else if (password === "") {
     alert("password missing");
-
+    
   }
   else {
 
@@ -156,14 +165,16 @@ function login() {
         if (data[0].passw === password) {
           console.log("Success");
           alert("login successful");
-          return true;
+          window.location = "services.html"
+          // return true;
         }
         else {
           alert("Incorrect Password")
-          return false;
+          // return false;
         }
       })
   }
+})
 }
 /////////////////////////////
 //login script validation ends
