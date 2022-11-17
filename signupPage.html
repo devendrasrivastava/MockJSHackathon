@@ -67,7 +67,72 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Exo+2&family=Fasthand&family=Lobster&family=Poor+Story&family=Silkscreen&family=Source+Sans+Pro&display=swap" rel="stylesheet">
 
-        <div class="row">
+<div class="container">
+    <form id="form" method="post" autocomplete="off" >
+    <div class="col-md-4 my-4">
+      
+      <div class="input-group">
+        <span class="input-group-text" id="usernameSpan"><i class="fa-solid fa-user"></i></span>
+        <input type="text" class="form-control" id="uname"  aria-describedby="inputGroupPrepend2" required>
+        <p id='para1'>Invalid</p>
+    </div>
+    </div>
+
+    <div class="col-md-4 my-4">
+        
+        <div class="input-group">
+          <span class="input-group-text" id="accnumberSpan"><i class="fa-solid fa-building-columns"></i></span>
+          <input type="text" class="form-control" id="accnumber" maxlength="8" aria-describedby="inputGroupPrepend2" required>
+          <p id='para2'>Invalid</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 my-4">
+        
+        <div class="input-group">
+          <span class="input-group-text" id="addressSpan"><i class="fa-solid fa-house"></i></span>
+          <input type="text" class="form-control" id="address"  aria-describedby="inputGroupPrepend2" required>
+          <p id='para3'>Invalid</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 my-4">
+        
+        <div class="input-group">
+          <span class="input-group-text" id="emailSpan"><i class="fa-solid fa-envelope-circle-check"></i></i></span>
+          <input type="text" class="form-control" id="email"  aria-describedby="inputGroupPrepend2" required>
+          <p id='para4'>Invalid</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 my-4">
+      
+      <div class="input-group">
+        <span class="input-group-text" id="mobileSpan"><i class="fa-solid fa-mobile-retro"></i></span>
+        <input type="text" class="form-control" id="mobile" maxlength="10" aria-describedby="inputGroupPrepend2" required>
+        <p id='errorpassword'>Invalid</p>  
+    </div>
+    </div>
+
+    <div class="col-md-4 my-4">
+        
+        <div class="input-group">
+          <span class="input-group-text" id="newPasswordSpan"><i class="fa-solid fa-key"></i></span>
+          <input type="password" class="form-control" id="newPassword" aria-describedby="inputGroupPrepend2" required>
+          <p id='errorpassword'>Invalid</p>
+        </div>
+      </div>    
+    
+    <div class="col-12">
+      <button class="btn btn-primary my-4" type="submit" onsubmit="return formSubmit()">Submit form</button>
+    </div>
+  </form>    
+  </div>
+
+
+
+
+        <!-- <div class="row">
             <div class="col-12 col-sm-8 mx-auto">
                 <img src="img/nw logo.png" alt="" class="img-fluid">
                 <H1>Sign Up Here</H1>
@@ -125,7 +190,7 @@
                 </form>
             </div>
         </div>
-    </div>
+    </div> -->
 
    <!-- footer starts -->
    <footer>
@@ -181,13 +246,13 @@
             <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
                 <p>© 2022 NatWest Bank, Inc. All rights reserved.</p>
                 <ul class="list-unstyled d-flex" id="user-social-media-icons">
-                    <li class="ms-3"><a class="link-dark" href="#"><a href="#" class="fa fa-facebook"></a></use>
+                    <li class="ms-3"><a class="link-dark" href="#"><a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"></a></use>
                             </svg></a></li>
-                    <li class="ms-3"><a class="link-dark" href="#"><a href="#" class="fa fa-twitter"></a></use>
+                    <li class="ms-3"><a class="link-dark" href="#"><a href="https://twitter.com/" target="_blank" class="fa fa-twitter"></a></use>
                             </svg></a></li>
-                    <li class="ms-3"><a class="link-dark" href="#"><a href="#" class="fa fa-linkedin"></a></use>
+                    <li class="ms-3"><a class="link-dark" href="#"><a href="https://www.linkedin.com/" target="_blank" class="fa fa-linkedin"></a></use>
                             </svg></a></li>
-                    <li class="ms-3"><a class="link-dark" href="#"><a href="#" class="fa fa-instagram"></a></li>
+                    <li class="ms-3"><a class="link-dark" href="#"><a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram"></a></li>
                 </ul>
             </div>
         </footer>
