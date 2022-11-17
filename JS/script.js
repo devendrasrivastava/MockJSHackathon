@@ -147,53 +147,30 @@ form.addEventListener('submit', function (e) {
 ///////////////////////////
 //login script validation starts here
 
-let btnLogin = document.getElementById("loginSubmitButton");
-btnLogin.onclick = login;
-
-// var currentUser = 0;
-
-function login() {
-
-
-let Lform = document.getElementById('loginFormId')
-Lform.addEventListener('submit', function (e) {
-  //auto submission of form
-
-  e.preventDefault()
+function formlogin() {
+  event.preventDefault()
   
-
-  console.log("login");
-  let email = document.getElementById("exampleInputEmail33").value;
-  let password = document.getElementById("exampleInputPassword3").value;
-  if (email === "") {
-    alert("Please enter your email id field and try again");
-  }
-  else if (password === "") {
-    alert("password missing");
-    
-  }
-  else {
-
-    fetch(`http://localhost:3000/CustomerData?email=${email}`)
-      .then(res => res.json())
-      .then(data => {
-        console.log(data);
-        if (data.length === 0) {
-          alert("Email address does not exist")
-        }
-        if (data[0].newPassword === password) {
-          console.log("Success");
-          alert("login successful");
-          window.location = "services.html"
-          // return true;
-        }
-        else {
-          alert("Incorrect Password")
-          // return false;
-        }
-      })
-  }
-})
+  var password = document.getElementById('password1').value
+  var uname = document.getElementById('email1').value
+  console.log(uname, password1);
+  fetch(`http://localhost:3000/customerdata?email=${uname}`)
+    .then(res => res.json())
+    .then(data => {
+      console.log(data);
+      if (data.length === 0) {
+        alert("Invalid Credentials")
+      }
+      if (data[0].newPassword === password) {
+        console.log("Success");
+        alert("Login successfull");
+        window.location = "index.html"
+        return true;
+      }
+      else {
+        alert("Invalid Credentials")
+        return false
+      }
+    })
 }
 /////////////////////////////
 //login script validation ends
